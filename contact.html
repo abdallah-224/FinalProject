@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Contact -->
+    <section class="section active">
+        <div class="container">
+            <div class="section-content">
+                <h2>Formulaire de Contact</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nom">Nom complet *</label>
+                        <input type="text" id="nom" name="nom" required>
+                        <div class="error" id="nomError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone">
+                        <div class="error" id="telephoneError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sujet">Sujet de la demande *</label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="emploi">Opportunité d'emploi</option>
+                            <option value="projet">Projet personnel</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <div class="error" id="sujetError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error" id="messageError"></div>
+                    </div>
+
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
+
+                <div id="successMessage" class="success" style="display: none;">
+                    Merci pour votre message ! Je vous répondrai dans les plus brefs délais.
+                </div>
+            </div>
+        </div>
+
+        <div class="details">
+            <p>N’hésitez pas à me contacter pour toute collaboration, échange ou projet professionnel.</p>
+            <ul>
+                <li><strong>Téléphone :</strong> +224 663 68 82 77</li>
+                <li><strong>Email :</strong> <a
+                        href="mailto:baldethiernoabdoulaye4@gmail.com">baldethiernoabdoulaye4@gmail.com</a></li>
+                <li><strong>Adresse :</strong> Malang, Indonésie</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

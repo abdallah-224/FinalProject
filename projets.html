@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projets</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Projets -->
+    <section class="section active">
+        <div class="container">
+            <div class="section-content">
+                <h2>Mes Projets</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card" onclick="showProjectDetails('Site Portfolio')">
+                        <h3>Site Portfolio</h3>
+                        <p>Portfolio personnel responsive avec animations et formulaire de contact fonctionnel.</p>
+                        <strong>Technologies : HTML, CSS, JavaScript</strong>
+                    </div>
+
+
+                    <div class="project-card" onclick="showProjectDetails('Plateforme Leadership')">
+                        <h3>Plateforme de Leadership et Mentorat</h3>
+                        <p>Projet social visant à former et accompagner les jeunes Guinéens dans le développement de
+                            compétences en leadership et entrepreneuriat.</p>
+                        <strong>Technologies : Planification stratégique, gestion de projet, formation</strong>
+                    </div>
+
+                    <div class="project-card" onclick="showProjectDetails('Atelier Risques')">
+                        <h3>Atelier sur la gestion des risques</h3>
+                        <p>Sessions de formation pour les PME sur l’évaluation des risques financiers et la mise en
+                            œuvre de stratégies efficaces.</p>
+                        <strong>Technologies : Analyse financière, risk management, communication</strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
